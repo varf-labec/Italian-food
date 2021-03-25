@@ -1,0 +1,894 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+* {
+    font-family: "Montserrat", "Mrs Sheppards";
+    border: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+input {
+    outline: none;
+}
+
+.full_screen {
+    background: url(images/background.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    margin: 0px 70px;
+}
+
+#faq {
+    z-index: 500;
+}
+
+.full_screen__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0px 0px 0px;
+    margin-bottom: 170px;
+}
+
+.full_screen__header_logo_icon {
+    max-width: 136px;
+    height: 109px;
+}
+
+.full_screen__header_second_item {
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.full_screen__nav_block {
+    display: flex;
+}
+
+.full_screen_blocks {
+    position: relative;
+    margin: 0px 32px;
+}
+
+.full_screen_blocks:last-child {
+    margin-right: 64px;
+}
+
+.full_screen_blocks:hover .full_screen__nav_links_blocks {
+    color: #c3aa2f;
+    display: block;
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+.full_screen_blocks:hover .full_screen__nav_links {
+    color: #c3aa2f;
+}
+
+.full_screen__nav_links {
+    font-family: "Montserrat";
+    font-size: 16.7px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    text-decoration: none;
+
+    padding-bottom: 10px;
+}
+
+.full_screen__nav_links_blocks {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: -36px;
+    right: -36px;
+    background-color: #36393c;
+    border-radius: 10px;
+
+    opacity: 0;
+}
+
+.full_screen__nav_links_blocks_links {
+    text-align: center;
+    margin: 7px 0px;
+    position: relative;
+    padding-bottom: 7px;
+}
+
+.full_screen__nav_links_blocks_links:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    margin: 0 auto;
+    height: 2px;
+    width: 80%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.full_screen_blocks_links {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.full_screen_blocks_links:hover {
+    color: #c3aa2f;
+}
+
+.search {
+    display: flex;
+    max-width: 190px;
+}
+
+.search_stripe {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 25px;
+    max-width: 100%;
+    height: 50px;
+
+    position: relative;
+
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    padding-right: 71px;
+    padding-left: 20px;
+}
+
+.search_icon {
+    max-width: 30px;
+    height: 30px;
+
+    position: absolute;
+    bottom: 11px;
+    right: 26px;
+}
+
+.full_screen__description_block {
+    z-index: 555;
+    position: relative;
+}
+
+.full_screen__italian_food {
+    margin-bottom: 80px;
+
+    font-family: "Mrs Sheppards";
+    font-size: 130px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.full_screen__lorem {
+    margin-bottom: 36px;
+
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+}
+
+.button {
+    max-width: 334px;
+    height: 75px;
+    border-radius: 37px;
+
+    font-size: 29.2px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+}
+
+.full_screen_read_more {
+    margin: 60px 0px 22% 0px;
+
+    width: 218px;
+    height: 47px;
+    opacity: 0.9;
+    background-color: #fff;
+    border-radius: 37px;
+
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #2e3034;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.full_screen_read_more:hover, .full_screen_read_more:active {
+    color: #000;
+    background-color: grey;
+    transition: 0.6s;
+}
+
+#full_screen_go_up_block {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+
+    transition: all 1s ease;
+}
+
+.full_screen_go_up {
+    height: 50px;
+    background-color: #b3b1ba;
+    color: #2e3034;
+    font-size: 25px;
+    padding: 12px 15px 12px 15px;
+}
+
+.full_screen__lorem_full {
+    font-size: 20.9px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
+
+.full_screen__images_block {
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.full_screen__images_pasta {
+    position: absolute;
+    right: 32px;
+    bottom: 188px;
+}
+
+.full_screen__images_souce {
+    position: absolute;
+    right: 519px;
+    bottom: 43px;
+}
+
+.full_screen__images_leaves_image_block {
+    position: absolute;
+    overflow: hidden;
+    left: 62%;
+    bottom: -110px;
+    width: 38%;
+    height: 43%;
+}
+
+.full_screen__images_leaves {
+    max-width: 100%;
+}
+
+/*Вторая секция*/
+
+.pasta_content {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 35px 0px 50px 0px;
+}
+
+.text_header {
+    font-family: 'Mrs Sheppards', cursive;
+    font-size: 100px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #222328;
+}
+
+.pasta_lorem_header {
+    margin-bottom: 38px;
+}
+
+.pasta_lorem_text {
+    font-size: 27.1px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #2f3135;
+    text-align: center;
+
+    margin-bottom: 97px;
+}
+
+.pasta_blocks {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    margin-bottom: 123px;
+}
+
+.pasta_blocks_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pasta_blocks_content:last-child {
+    margin-right: 0px;
+}
+
+.pasta_blocks_images {
+    justify-content: center;
+
+    margin-bottom: 63px;
+}
+
+.pasta_blocks_header {
+    font-size: 29.2px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #343434;
+    text-align: center;
+
+    margin-bottom: 21px;
+}
+
+.pasta_blocks_text {
+    font-size: 23px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #343434;
+    text-align: center;
+}
+
+.pasta_show_more {
+    width: 334px;
+    height: 75px;
+    background-color: #343434;
+    border-radius: 38px;
+
+    font-size: 23.2px;
+    line-height: 21px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+}
+
+/*Третья секция*/
+
+.small_section {
+    background-color: #27292c;
+}
+
+.small_section_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 48px 0px 71px 0px;
+}
+
+.small_section_header {
+    margin-bottom: 54px;
+    color: #ffffff;
+}
+
+.small_section_two_blocks {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 75px;
+    padding: 0px 150px;
+}
+
+.small_section_text {
+    font-size: 16.7px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #ffffff;
+    overflow-wrap: break-word;
+
+    text-align: justify;
+}
+
+.small_section_text:first-child {
+    margin-right: 66px;
+}
+
+.small_section_more_info {
+    width: 270px;
+    height: 58px;
+    opacity: 0.9;
+    background-color: #fefefe;
+    border-radius: 22px;
+
+    font-size: 26.4px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #27292c;
+}
+
+/*Четвёртая секция*/
+
+.two_blocks {
+    overflow: hidden;
+}
+
+.two_blocks_content {
+    margin: 60px 0px;
+}
+
+.two_blocks_blocks:first-child {
+    margin-bottom: 105px;
+    justify-content: flex-end;
+}
+
+.two_blocks_blocks {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+
+    margin-bottom: 54px;
+}
+
+.two_blocks_images {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+
+    display: block;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 4px 60px 57px 0px rgba(12, 13, 12, 0.44);
+    max-width: 614px;
+    height: 612px;
+}
+
+.two_blocks_images:first-child {
+    left: 0;
+}
+
+.two_blocks_images:last-child {
+    right: 0;
+}
+
+.two_blocks_small_ones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    z-index: 111;
+    position: relative;
+    padding: 75px 0px;
+}
+
+.two_blocks_header {
+    font-size: 58.4px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #27292c;
+
+    margin-bottom: 52px;
+}
+
+.two_blocks_text {
+    font-size: 29.2px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #27292c;
+
+    margin-bottom: 53px;
+}
+
+/*Пятая секция*/
+
+.full_screen2 {
+    background: url(images/background2.png) no-repeat;
+
+    position: relative;
+}
+
+.full_screen2_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0px 0px 0px;
+}
+
+.full_screen2_text_block {
+    position: relative;
+    z-index: 1111;
+}
+
+.full_screen2_header {
+    font-family: 'Mrs Sheppards', cursive;
+    font-size: 100px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.full_screen2_text {
+    font-size: 25px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+
+    display: block;
+    position: relative;
+
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.full_screen2_text:after {
+    content: "";
+    display: block;
+    max-width: 100%;
+    height: 6px;
+    background-color: #fafafa;
+    border-radius: 30%;
+
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    bottom: 0;
+}
+
+.full_screen2_leaves_image_block {
+    position: absolute;
+    top: -167px;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+}
+
+.full_screen2_leaves {
+    max-width: 100%;
+}
+
+.pizza_block {
+    position: relative;
+    align-self: flex-end;
+}
+
+.pizza_block:before {
+    content: url("images/peace_of_pizza.png");
+    display: block;
+    width: 448px;
+    height: 391px;
+
+    position: absolute;
+    bottom: 0px;
+    left: -200px;
+}
+
+.full_screen2_pizza {
+    padding-bottom: 43px;
+
+    display: flex;
+    align-self: flex-end;
+}
+
+/*Шестая секция*/
+
+.article_content {
+    padding: 139px 0px;
+}
+
+.article_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article_row {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 233px;
+}
+
+.article_top_block {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 62px;
+}
+
+.article_top_block:last-child {
+    margin: 0;
+}
+
+.article_header {
+    font-family: 'Mrs Sheppards', cursive;
+    font-size: 41.7px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #393939;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article_text {
+    font-size: 18.8px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333d42;
+    text-align: center;
+}
+
+.article_bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+blockquote {
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #3f3f3f;
+    text-align: center;
+
+
+    margin-bottom: 12px;
+}
+
+cite {
+    font-size: 16px;
+    line-height: 33px;
+    font-weight: 700;
+    color: #3f3f3f;
+    display: flex;
+    align-items: flex-end;
+    align-self: center;
+}
+
+/*Седьмая секция*/
+
+.feedback {
+    height: 802px;
+    background-color: #27292c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 5;
+}
+
+.feedback_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feedback_header {
+    font-size: 75px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+
+    margin-bottom: 70px;
+}
+
+.feedback_text {
+    font-size: 29.8px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+
+    margin-bottom: 78px;
+}
+
+.feedback_forms {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+
+    z-index: 2;
+    position: relative;
+}
+
+.feedback_email {
+    width: 659px;
+    height: 63px;
+    border-radius: 32px;
+    background-color: #ffffff;
+
+    padding: 0 235px 0 20px;
+
+    font-size: 25px;
+    color: #54524f;
+    font-weight: 400;
+}
+
+.feedback_subscribe {
+    width: 222px;
+    height: 65px;
+    border-radius: 32px;
+    background-color: #54524f;
+
+    position: absolute;
+    bottom: 0px;
+    right: -1px;
+
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.image_unique {
+    max-width: 100%;
+}
+
+.feedback_image_block {
+    position: absolute;
+    z-index: -1;
+    top: -56px;
+    right: 0px;
+    bottom: -197px;
+    left: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.feedback_image {
+    width: 100%;
+}
+
+/*Подвал*/
+
+.footer {
+    display: inline;
+    align-items: center;
+}
+
+.footer_content {
+    padding: 200px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.footer_content_right_block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_column_left {
+    display: inline-flex;
+}
+
+.footer_column_right {
+    font-size: 23.7px;
+    line-height: 41px;
+    font-weight: 400;
+    color: #343434;
+
+    margin-right: 46px;
+}
+
+.footer_column_right:last-child {
+    margin: 0px;
+}
+
+.footer_header:first-child {
+    margin-bottom: 38.5px;
+}
+
+.footer_header {
+    font-size: 31.6px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #343434;
+
+    margin-bottom: 37.5px;
+}
+
+.footer_text {
+    padding-top: 6px;
+    font-size: 23.7px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #343434;
+
+    margin-bottom: 35px;
+}
+
+.footer_soc_networks {
+    display: flex;
+}
+
+.footer_networks_links {
+    margin-right: 16px;
+}
+
+.author_link {
+    font-size: 23.7px;
+    line-height: 41px;
+    font-weight: 400;
+    color: #343434;
+}
+
+.footer_links {
+    font-size: 23.7px;
+    line-height: 41px;
+    font-weight: 400;
+    color: #343434;
+
+    text-decoration: none;
+}
